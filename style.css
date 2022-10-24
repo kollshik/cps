@@ -1,0 +1,106 @@
+
+body{
+    background-color: gray;
+    color: white;   
+    text-align: center;
+    width: 100%;
+
+}
+
+input{
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 30px;
+    
+}
+
+button{
+    margin-top: 10px;
+    height: 40px;
+    width: 150px
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+h1{
+    width: 100%;    
+}
+h2{
+    width: 100%;    
+}
+h3{
+    width: 100%;    
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    width: 500px;
+}
+.all__container{
+    width: 100%;
+}
+
+.tipeCement__form{
+    display: flex;
+    align-items: center;
+}
+
+.tipeCement{
+width: 40px;
+height: 40px;
+margin-top: 0px;
+}
+
+label{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50px;
+    padding-left: 5px;
+}
+
+.tipeMixture__form{
+    display: flex;
+    justify-content: center;
+}
+
+.tipeMixture__radio{
+    width: 40px;
+    height: 40px;
+    margin-top: 0px;    
+}
+
+.result__count{
+    width: 308px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.rck__form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rck{
+    width: 220px;
+    margin: 0px;
+}
+
+.rl{
+    width: 45px;
+    text-align: left;
+    margin-left: 5px;
+}

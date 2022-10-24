@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Калькулятор цементно-песчаной смеси</title>
+  </head>
+  <body>
+    <h1>Калькулятор ЦПС</h1>
+      <div class="container">
+        <div class="square  all__container">
+          <div class="square__container">
+            <h2 class="square__title">Площадь помещения</h2>
+              <form action="#" name="square__form">
+                <h3>Ширина</h3>
+                <input type="number" name="width" id="" placeholder="м" />
+                <h3>Длинна</h3>
+                <input type="number" name="heigh" id="" placeholder="м"/>
+                <h3>Площадь</h3>
+                <input type="number" name="result" id="" placeholder="м2"/>
+                <button class="square__count" type="button">Подсчет</button>
+                <button class="square__clear" type="button">Очистить</button>
+              </form>
+          </div>
+        </div>
+        <div class="thickness  all__container">
+          <div class="thickness__container">
+            <h2>Толщина слоя</h2>
+            <form action="#" name="thickness__form">
+              <input type="number" name="thickness" id="" placeholder="мм"/>
+            </form>
+          </div>
+        </div>
+        <div class="tipeСement">
+          <div class="tipeCement__container">
+            <h2>Марка цемента</h2>
+            <form action="#" name="tipeCement__form" class="tipeCement__form">
+              <input type="radio" name="tipeCement" class="tipeCement" id="C300" value="300" checked> 
+                <label for="C300">300</label>
+              <input type="radio" name="tipeCement" class="tipeCement" id="C400" value="400"> 
+                <label for="C300">400</label>
+              <input type="radio" name="tipeCement" class="tipeCement" id="C500" value="500">
+                <label for="C300">500</label>
+              <input type="radio" name="tipeCement" class="tipeCement" id="C600" value="600"> 
+                <label for="C300">600</label>
+            </form>
+          </div>
+        </div>
+        <div class="tipeMixture">
+          <div class="tipeMixture__container">
+            <h2>Марка раствора</h2>
+            <form action="#" name="tipeMixture__form" class="tipeMixture__form">
+              <input type="radio" name="tipeMixture" class="tipeMixture__radio" id="C300" value="100" checked> 
+                <label for="C300">100</label>
+              <input type="radio" name="tipeMixture" class="tipeMixture__radio" id="C400" value="150"> 
+                <label for="C300">150</label>
+              <input type="radio" name="tipeMixture" class="tipeMixture__radio" id="C500" value="200">
+                <label for="C300">200</label>
+            </form>
+          </div>
+        </div>
+        <div class="bag all__container">
+          <div class="bag__container">
+            <h3>Вес 1 мешка цемента</h2>
+            <form action="#" name="bag__form">
+              <input type="number" name="one_bag__cement" placeholder="кг" value="25">
+              <h3>Вес 1 мешка песка</h2>
+              <input type="number" name="one_bag__sand" placeholder="кг" value="25">
+            </form>
+          </div>
+        </div>
+        <div class="result all__container">
+          <div class="result__container">
+            <h2>Результат</h2>
+            <form action="#" name="result__form" class="rck__form">
+              <h3>Объем раствора (м3)</h3>
+              <input type="namber" name="result__volume" placeholder="м3" class="rck" readonly>
+              <div class="rck_label rl">м3</div>
+              <h3>Количество цемента</h3>
+              <input type="namber" name="result__cement_kg" placeholder="кг" max="4" class="rck" readonly>
+              <div class="rck_label rl">кг</div>
+              <input type="namber" name="result__cement_bag" placeholder="мешков" max="4" class="rck" readonly>
+              <div class="rck_label rl">мешков</div>
+              <h3>Количество песка</h3>
+              <input type="namber" name="result__sand_kg" placeholder="кг" max="4" class="rck" readonly>
+              <div class="rck_label rl">кг</div>
+              <input type="namber" name="result__sand_bag" placeholder="мешков" max="4" class="rck" readonly>
+              <div class="rck_label rl">мешков</div>
+              <button class="result__count" type="button">Подсчет</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+  <script src="script.js"></script>
+</html>
